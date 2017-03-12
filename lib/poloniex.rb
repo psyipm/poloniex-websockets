@@ -1,5 +1,15 @@
-require "poloniex/version"
+require 'poloniex/version'
+require 'poloniex/configuration'
+require 'poloniex/errors'
+require 'poloniex/websocket'
+require 'wamp_client'
 
 module Poloniex
-  # Your code goes here...
+  def self.configuration
+    @configuration ||= Configuration.new
+  end
+
+  def self.configure
+    yield(configuration)
+  end
 end
