@@ -1,4 +1,4 @@
-module Poloniex
+module PoloniexWs
   class Configuration
     attr_accessor :websocket_api_endpoint, :websocket_realm, :websocket_verbose
 

@@ -1,10 +1,10 @@
-require 'poloniex/version'
-require 'poloniex/configuration'
-require 'poloniex/errors'
-require 'poloniex/websocket'
+require 'poloniex_ws/version'
+require 'poloniex_ws/configuration'
+require 'poloniex_ws/errors'
+require 'poloniex_ws/websocket'
 require 'wamp_client'
 
-module Poloniex
+module PoloniexWs
   def self.configuration
     @configuration ||= Configuration.new
   end

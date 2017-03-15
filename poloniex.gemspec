@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'poloniex/version'
+require 'poloniex_ws/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'poloniex-api'
-  spec.version       = Poloniex::VERSION
+  spec.version       = PoloniexWs::VERSION
   spec.authors       = ['Igor Malinovskiy']
   spec.email         = ['igor.malinovskiy@mailinator.com']
 

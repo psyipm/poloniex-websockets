@@ -1,7 +1,7 @@
-module Poloniex
+module PoloniexWs
   class Websocket
     def connection
-      options = Poloniex.configuration.websocket
+      options = PoloniexWs.configuration.websocket
       @connection ||= WampClient::Connection.new(options)
     end
 

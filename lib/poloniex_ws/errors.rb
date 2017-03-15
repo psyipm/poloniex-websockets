@@ -1,3 +1,3 @@
-module Poloniex
+module PoloniexWs
   class BlockMissingError < StandardError; end
 end
